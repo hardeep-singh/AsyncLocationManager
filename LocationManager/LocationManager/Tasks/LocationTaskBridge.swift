@@ -28,10 +28,11 @@ public enum LocationBridgeEvent {
     case monitoringDidFailFor(region: CLRegion?, error: Error)
 }
 
-class LocationTaskBridge {
+actor LocationTaskBridge {
     
     private var tasks = [String: AnyLocationTask]()
     
+    nonisolated
     private func keyForObject(task: AnyLocationTask) -> String {
         let type = type(of: task)
         return String(describing: type)
@@ -46,9 +47,12 @@ class LocationTaskBridge {
     }
     
     /// - Parameter event: event to dispatch.
+    nonisolated
     func dispatchEvent(event: LocationBridgeEvent) {
-        for task in tasks.values {
-            task.received(event: event)
+        Task {
+            for task in await tasks.values {
+                task.received(event: event)
+            }
         }
     }
 

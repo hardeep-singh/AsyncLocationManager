@@ -56,13 +56,13 @@ public class LocationManager {
     
     private func requestWhenInUseAuthorization() async throws -> CLAuthorizationStatus {
         let task = LocationAuthorizationTask(locationManager: self)
-        locationTaskBridge.add(task: task)
+        await locationTaskBridge.add(task: task)
         return try await task.requestWhenInUseAuthorization()
     }
     
     private func requestAlwaysAuthorization() async throws -> CLAuthorizationStatus {
         let locationPermission = LocationAuthorizationTask(locationManager: self)
-        locationTaskBridge.add(task: locationPermission)
+        await locationTaskBridge.add(task: locationPermission)
         return try await locationPermission.requestAlwaysAuthorization()
     }
     
@@ -70,7 +70,7 @@ public class LocationManager {
     @discardableResult
     public func requestLocation() async throws -> CLLocation {
         let singleLocation = SingleUpdateLocationTask(locationManager: self)
-        locationTaskBridge.add(task: singleLocation)
+        await locationTaskBridge.add(task: singleLocation)
         return try await singleLocation.requestLocation()
     }
     
@@ -79,7 +79,9 @@ public class LocationManager {
         let task = LocationMonitoringTask()
         return LocationMonitoringTask.Stream { stream in
             task.stream = stream
-            locationTaskBridge.add(task: task)
+            Task {
+                await locationTaskBridge.add(task: task)
+            }
             locationManager.startUpdatingLocation()
             stream.onTermination = { [weak self]_ in
                 self?.stopUpdatingLocation()
@@ -90,7 +92,9 @@ public class LocationManager {
     /// Stop updating location updates streams.
     public func stopUpdatingLocation() {
         locationManager.stopUpdatingLocation()
-        locationTaskBridge.remove(task: LocationMonitoringTask.self)
+        Task {
+            await locationTaskBridge.remove(task: LocationMonitoringTask.self)
+        }
     }
     
     // MARK: - Region Monitoring...
@@ -98,7 +102,9 @@ public class LocationManager {
         let task = RegionMonitoringTask()
         return RegionMonitoringTask.Stream { stream in
             task.stream = stream
-            locationTaskBridge.add(task: task)
+            Task {
+                await locationTaskBridge.add(task: task)
+            }
         }
     }
     
@@ -109,7 +115,9 @@ public class LocationManager {
     public func stopMonitoring(region: CLRegion) {
         locationManager.stopMonitoring(for: region)
         if locationManager.monitoredRegions.isEmpty {
-            locationTaskBridge.remove(task: RegionMonitoringTask.self)
+            Task {
+                await locationTaskBridge.remove(task: RegionMonitoringTask.self)
+            }
         }
     }
     
