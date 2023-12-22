@@ -93,4 +93,30 @@ public class LocationManager {
         locationTaskBridge.remove(task: LocationMonitoringTask.self)
     }
     
+    // MARK: - Region Monitoring...
+    public func regionMonitoringEventDidReceived() async throws -> RegionMonitoringTask.Stream {
+        let task = RegionMonitoringTask()
+        return RegionMonitoringTask.Stream { stream in
+            task.stream = stream
+            locationTaskBridge.add(task: task)
+        }
+    }
+    
+    public func startMonitoring(region: CLRegion) {
+        locationManager.startMonitoring(for: region)
+    }
+    
+    public func stopMonitoring(region: CLRegion) {
+        locationManager.stopMonitoring(for: region)
+        if locationManager.monitoredRegions.isEmpty {
+            locationTaskBridge.remove(task: RegionMonitoringTask.self)
+        }
+    }
+    
+    public func stopAllRegionMonitoring() {
+        for region in locationManager.monitoredRegions {
+            stopMonitoring(region: region)
+        }
+    }
+    
 }

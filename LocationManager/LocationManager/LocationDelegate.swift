@@ -45,4 +45,21 @@ class LocationDelegate: NSObject, CLLocationManagerDelegate {
         locationTaskBridge.dispatchEvent(event: .locationUpdatesResumed)
     }
     
+    // MARK: - Region Monitoring
+    func locationManager(_ manager: CLLocationManager, monitoringDidFailFor region: CLRegion?, withError error: Error) {
+        locationTaskBridge.dispatchEvent(event: .monitoringDidFailFor(region: region, error: error))
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
+        locationTaskBridge.dispatchEvent(event: .didEnterRegion(region))
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
+        locationTaskBridge.dispatchEvent(event: .didExitRegion(region))
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didStartMonitoringFor region: CLRegion) {
+        locationTaskBridge.dispatchEvent(event: .didStartMonitoringFor(region))
+    }
+    
 }

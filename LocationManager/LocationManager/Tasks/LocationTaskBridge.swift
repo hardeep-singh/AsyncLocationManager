@@ -20,6 +20,12 @@ public enum LocationBridgeEvent {
     
     // MARK: - Failures
     case didFailWithError(_ error: Error)
+    
+    // MARK: - Region Monitoring
+    case didEnterRegion(_ region: CLRegion)
+    case didExitRegion(_ region: CLRegion)
+    case didStartMonitoringFor(_ region: CLRegion)
+    case monitoringDidFailFor(region: CLRegion?, error: Error)
 }
 
 class LocationTaskBridge {
