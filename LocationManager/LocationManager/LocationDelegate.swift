@@ -8,21 +8,6 @@
 import Foundation
 import CoreLocation
 
-public enum LocationBridgeEvent {
-    
-    // MARK: - Authorization
-    case didChangeLocationEnabled(_ enabled: Bool)
-    case didChangeAuthorization(_ status: CLAuthorizationStatus)
-    
-    // MARK: - Location Monitoring
-    case locationUpdatesPaused
-    case locationUpdatesResumed
-    case didUpdateLocations(locations: [CLLocation])
-    
-    // MARK: - Failures
-    case didFailWithError(_ error: Error)
-}
-
 class LocationDelegate: NSObject, CLLocationManagerDelegate {
     
     weak var locationTaskBridge: LocationTaskBridge!
