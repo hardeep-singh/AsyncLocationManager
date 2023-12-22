@@ -23,7 +23,7 @@ public class LocationManager {
     /// The status of your app’s authorization to provide parental controls.
     public var authorizationStatus: CLAuthorizationStatus {
         if #available(iOS 14.0, *) {
-           return locationManager.authorizationStatus
+            return locationManager.authorizationStatus
         } else {
             // Fallback on earlier versions
             return CLLocationManager.authorizationStatus()
@@ -72,6 +72,25 @@ public class LocationManager {
         let singleLocation = SingleUpdateLocationTask(locationManager: self)
         locationTaskBridge.add(task: singleLocation)
         return try await singleLocation.requestLocation()
+    }
+    
+    // MARK: -
+    public func startUpdatingLocation() async throws -> LocationMonitoringTask.Stream {
+        let task = LocationMonitoringTask()
+        return LocationMonitoringTask.Stream { stream in
+            task.stream = stream
+            locationTaskBridge.add(task: task)
+            locationManager.startUpdatingLocation()
+            stream.onTermination = { [weak self]_ in
+                self?.stopUpdatingLocation()
+            }
+        }
+    }
+    
+    /// Stop updating location updates streams.
+    public func stopUpdatingLocation() {
+        locationManager.stopUpdatingLocation()
+        locationTaskBridge.remove(task: LocationMonitoringTask.self)
     }
     
 }
