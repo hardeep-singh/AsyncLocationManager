@@ -43,10 +43,27 @@ public class LocationManager {
         return authorizationStatus == .authorizedWhenInUse || authorizationStatus == .authorizedAlways
     }
     
-    public func requestWhenInUseAuthorization() async throws -> CLAuthorizationStatus {
+    // MARK:- Request permissions
+    @discardableResult
+    public func requestAuthorizationPermission(_ permission: LocationPermissionType) async throws -> CLAuthorizationStatus {
+        switch permission {
+        case .whenInUse:
+            return try await requestWhenInUseAuthorization()
+        case .always:
+            return try await requestAlwaysAuthorization()
+        }
+    }
+    
+    private func requestWhenInUseAuthorization() async throws -> CLAuthorizationStatus {
         let task = LocationAuthorizationTask(locationManager: self)
         locationTaskBridge.add(task: task)
         return try await task.requestWhenInUseAuthorization()
+    }
+    
+    private func requestAlwaysAuthorization() async throws -> CLAuthorizationStatus {
+        let locationPermission = LocationAuthorizationTask(locationManager: self)
+        locationTaskBridge.add(task: locationPermission)
+        return try await locationPermission.requestAlwaysAuthorization()
     }
     
 }

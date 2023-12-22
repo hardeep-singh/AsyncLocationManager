@@ -16,6 +16,7 @@
 		8ADE53252B363CDD000B2F53 /* LocationTaskBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE53242B363CDD000B2F53 /* LocationTaskBridge.swift */; };
 		8ADE53272B363CE9000B2F53 /* AnyLocationTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE53262B363CE9000B2F53 /* AnyLocationTask.swift */; };
 		8ADE53292B363CF4000B2F53 /* LocationAuthorizationTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE53282B363CF4000B2F53 /* LocationAuthorizationTask.swift */; };
+		8ADE532C2B363ECC000B2F53 /* SupportModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE532B2B363ECC000B2F53 /* SupportModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		8ADE53242B363CDD000B2F53 /* LocationTaskBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTaskBridge.swift; sourceTree = "<group>"; };
 		8ADE53262B363CE9000B2F53 /* AnyLocationTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyLocationTask.swift; sourceTree = "<group>"; };
 		8ADE53282B363CF4000B2F53 /* LocationAuthorizationTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAuthorizationTask.swift; sourceTree = "<group>"; };
+		8ADE532B2B363ECC000B2F53 /* SupportModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				8ADE531F2B363B7A000B2F53 /* LocationManager.swift */,
 				8ADE53212B363C8D000B2F53 /* LocationDelegate.swift */,
 				8ADE53232B363CCC000B2F53 /* Tasks */,
+				8ADE532A2B363EB4000B2F53 /* Support */,
 			);
 			path = LocationManager;
 			sourceTree = "<group>";
@@ -106,6 +109,14 @@
 				8ADE53282B363CF4000B2F53 /* LocationAuthorizationTask.swift */,
 			);
 			path = Tasks;
+			sourceTree = "<group>";
+		};
+		8ADE532A2B363EB4000B2F53 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				8ADE532B2B363ECC000B2F53 /* SupportModels.swift */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8ADE53272B363CE9000B2F53 /* AnyLocationTask.swift in Sources */,
+				8ADE532C2B363ECC000B2F53 /* SupportModels.swift in Sources */,
 				8ADE53292B363CF4000B2F53 /* LocationAuthorizationTask.swift in Sources */,
 				8ADE53252B363CDD000B2F53 /* LocationTaskBridge.swift in Sources */,
 				8ADE53202B363B7A000B2F53 /* LocationManager.swift in Sources */,

@@ -31,6 +31,18 @@ class LocationAuthorizationTask: AnyLocationTask {
         }
     }
     
+    func requestAlwaysAuthorization() async throws -> CLAuthorizationStatus {
+        try await withCheckedThrowingContinuation { continuation in
+            let isAuthorized = locationManager.authorizationStatus != .notDetermined && locationManager.authorizationStatus != .authorizedWhenInUse
+            guard !isAuthorized else {
+                continuation.resume(with: .success(locationManager.authorizationStatus))
+                return
+            }
+            self.continuation = continuation
+            locationManager.locationManager.requestAlwaysAuthorization()
+        }
+    }
+    
     func received(event: LocationBridgeEvent) {
         switch event {
         case .didChangeAuthorization(let authorization):
