@@ -11,6 +11,11 @@
 		8ADE53102B363A34000B2F53 /* LocationManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ADE53052B363A34000B2F53 /* LocationManager.framework */; };
 		8ADE53152B363A34000B2F53 /* LocationManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE53142B363A34000B2F53 /* LocationManagerTests.swift */; };
 		8ADE53162B363A34000B2F53 /* LocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8ADE53082B363A34000B2F53 /* LocationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8ADE53202B363B7A000B2F53 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE531F2B363B7A000B2F53 /* LocationManager.swift */; };
+		8ADE53222B363C8D000B2F53 /* LocationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE53212B363C8D000B2F53 /* LocationDelegate.swift */; };
+		8ADE53252B363CDD000B2F53 /* LocationTaskBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE53242B363CDD000B2F53 /* LocationTaskBridge.swift */; };
+		8ADE53272B363CE9000B2F53 /* AnyLocationTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE53262B363CE9000B2F53 /* AnyLocationTask.swift */; };
+		8ADE53292B363CF4000B2F53 /* LocationAuthorizationTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE53282B363CF4000B2F53 /* LocationAuthorizationTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +34,11 @@
 		8ADE53092B363A34000B2F53 /* LocationManager.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = LocationManager.docc; sourceTree = "<group>"; };
 		8ADE530F2B363A34000B2F53 /* LocationManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ADE53142B363A34000B2F53 /* LocationManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerTests.swift; sourceTree = "<group>"; };
+		8ADE531F2B363B7A000B2F53 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		8ADE53212B363C8D000B2F53 /* LocationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDelegate.swift; sourceTree = "<group>"; };
+		8ADE53242B363CDD000B2F53 /* LocationTaskBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTaskBridge.swift; sourceTree = "<group>"; };
+		8ADE53262B363CE9000B2F53 /* AnyLocationTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyLocationTask.swift; sourceTree = "<group>"; };
+		8ADE53282B363CF4000B2F53 /* LocationAuthorizationTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAuthorizationTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +83,9 @@
 			children = (
 				8ADE53082B363A34000B2F53 /* LocationManager.h */,
 				8ADE53092B363A34000B2F53 /* LocationManager.docc */,
+				8ADE531F2B363B7A000B2F53 /* LocationManager.swift */,
+				8ADE53212B363C8D000B2F53 /* LocationDelegate.swift */,
+				8ADE53232B363CCC000B2F53 /* Tasks */,
 			);
 			path = LocationManager;
 			sourceTree = "<group>";
@@ -83,6 +96,16 @@
 				8ADE53142B363A34000B2F53 /* LocationManagerTests.swift */,
 			);
 			path = LocationManagerTests;
+			sourceTree = "<group>";
+		};
+		8ADE53232B363CCC000B2F53 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				8ADE53242B363CDD000B2F53 /* LocationTaskBridge.swift */,
+				8ADE53262B363CE9000B2F53 /* AnyLocationTask.swift */,
+				8ADE53282B363CF4000B2F53 /* LocationAuthorizationTask.swift */,
+			);
+			path = Tasks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +217,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ADE53272B363CE9000B2F53 /* AnyLocationTask.swift in Sources */,
+				8ADE53292B363CF4000B2F53 /* LocationAuthorizationTask.swift in Sources */,
+				8ADE53252B363CDD000B2F53 /* LocationTaskBridge.swift in Sources */,
+				8ADE53202B363B7A000B2F53 /* LocationManager.swift in Sources */,
+				8ADE53222B363C8D000B2F53 /* LocationDelegate.swift in Sources */,
 				8ADE530A2B363A34000B2F53 /* LocationManager.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +435,7 @@
 		8ADE531D2B363A34000B2F53 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T8HJX6S7A5;
@@ -423,6 +452,7 @@
 		8ADE531E2B363A34000B2F53 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T8HJX6S7A5;
