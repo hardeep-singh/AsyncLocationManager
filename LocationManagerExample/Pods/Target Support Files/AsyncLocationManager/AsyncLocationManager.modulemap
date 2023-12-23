@@ -1,0 +1,6 @@
+framework module AsyncLocationManager {
+  umbrella header "AsyncLocationManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

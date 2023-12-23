@@ -1,0 +1,16 @@
+PODS:
+  - AsyncLocationManager (0.0.1)
+
+DEPENDENCIES:
+  - AsyncLocationManager (from `../`)
+
+EXTERNAL SOURCES:
+  AsyncLocationManager:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AsyncLocationManager: 33d5e17434f5443036ce256c56783336b7f88d82
+
+PODFILE CHECKSUM: e4aa8085458d54ef103cfe127f4c9c46663ef2f9
+
+COCOAPODS: 1.13.0
