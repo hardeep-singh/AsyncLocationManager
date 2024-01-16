@@ -79,7 +79,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/hardeep-singh/AsyncLocationManager.git", :tag => "#{spec.version}", :branch => 'main' }
+  spec.source       = { :git => "https://github.com/hardeep-singh/AsyncLocationManager.git", :tag => "#{spec.version}", :branch => 'main', :tag => '0.0.1 }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
