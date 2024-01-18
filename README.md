@@ -21,3 +21,45 @@ Add the following line to your Package.swift file in the dependencies section:
 ```swift
 .package(url: "https://github.com/hardeep-singh/AsyncLocationManager.git, .upToNextMajor(from: "1.0.1"))
 ```
+
+### How to Use LocationManager
+---
+
+Create instance of the LocationManager
+
+```swift
+ let locationManager = LocationManager()
+```
+
+Request Location Authorization permissions
+
+```swift
+let authorizationStatus = try await locationManager.requestAuthorizationPermission(.always)
+```
+Request a single location
+```swift
+let location = try await locationManager.requestLocation()
+```
+
+Start monitoring and updating location
+```swift
+for await location in  await locationManager.startUpdatingLocation() {
+    switch location {
+    case .didFailWithError(let error):
+        print("Location:- \(error)")
+    case .didPaused:
+        print("Location Did Paused")
+        break
+    case .didResume:
+        print("Location Did Resume")
+        break
+    case .didUpdateLocations(let locations):
+        print("Location Did Update:- \(locations)")
+        break
+    }
+}
+```
+
+
+
+
