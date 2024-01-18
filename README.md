@@ -9,7 +9,7 @@ A wrapper for the Apple CoreLocation framework with the new Concurrency Model
 ### Install
 ---
 
-#### Cocoapods
+#### Cocoapods [Cocoapods](https://cocoapods.org)
 ```
 pod 'AsyncLocationManager'
 ```
