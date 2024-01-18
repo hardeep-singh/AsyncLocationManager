@@ -13,3 +13,11 @@ A wrapper for the Apple CoreLocation framework with the new Concurrency Model
 ```
 pod 'AsyncLocationManager'
 ```
+
+#### [SPM](https://swift.org/package-manager/)
+
+Add the following line to your Package.swift file in the dependencies section:
+
+```swift
+.package(url: "https://github.com/hardeep-singh/AsyncLocationManager.git, .upToNextMajor(from: "1.0.1"))
+```
