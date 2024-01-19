@@ -59,6 +59,9 @@ for await location in  await locationManager.startUpdatingLocation() {
     }
 }
 ```
+### License
+---
+AsyncLocationManager is released under the MIT license. [See LICENSE](https://github.com/hardeep-singh/AsyncLocationManager/blob/main/LICENSE) for details.
 
 
 
