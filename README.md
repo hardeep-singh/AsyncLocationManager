@@ -19,7 +19,7 @@ pod 'AsyncLocationManager'
 Add the following line to your Package.swift file in the dependencies section:
 
 ```swift
-.package(url: "https://github.com/hardeep-singh/AsyncLocationManager.git, .upToNextMajor(from: "1.0.1"))
+.package(url: "https://github.com/hardeep-singh/AsyncLocationManager.git)
 ```
 
 ### How to Use LocationManager
