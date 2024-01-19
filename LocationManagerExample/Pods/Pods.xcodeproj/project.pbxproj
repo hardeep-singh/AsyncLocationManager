@@ -7,26 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0486F9B9617459F9761E3B07A6A66607 /* AsyncLocationManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7649C8E6E9D6F3E83A52310563378160 /* AsyncLocationManager-dummy.m */; };
-		1445E1444FC2B4515C790A2FFC76ADA9 /* LocationTaskBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFA0952224CFF78FBB83E672123B5BB /* LocationTaskBridge.swift */; };
-		1680720C7526C57C5B888E5160B78F46 /* SupportModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078AFAAF7DBC7692A2318A0BCA0F2A00 /* SupportModels.swift */; };
-		18F830B308A191C2CE358DC29603BC04 /* SingleUpdateLocationTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990D1BD9854439691F80C97647C7FB09 /* SingleUpdateLocationTask.swift */; };
+		0486F9B9617459F9761E3B07A6A66607 /* AsyncLocationManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D832CF7A1C951487C5CC1589E9C92A /* AsyncLocationManager-dummy.m */; };
+		1445E1444FC2B4515C790A2FFC76ADA9 /* LocationTaskBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EE2E20C19BEB3AFEAE25B25F9BE41B /* LocationTaskBridge.swift */; };
+		1680720C7526C57C5B888E5160B78F46 /* SupportModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73945D895F4465885B7B635AFC4495 /* SupportModels.swift */; };
+		18F830B308A191C2CE358DC29603BC04 /* SingleUpdateLocationTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1424F8EAFA18872B2734784143CA09 /* SingleUpdateLocationTask.swift */; };
 		28936E7DEF54CA028065701BF9BBA829 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		2BAFA3FBCB490F37A04F2B968EC06A7A /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0D74CD23AD1A065B3271799BA114CB /* LocationManager.swift */; };
-		3150F34E799EC39568C4B39F3D1D44C4 /* AsyncLocationManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B11864F33F52AB4E3787FFE5BACF52F /* AsyncLocationManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4EBD88C98320BFADB3613AA66B9CD820 /* LocationMonitoringTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEECA09005DC1CBBF9922E345345992 /* LocationMonitoringTask.swift */; };
-		60034387C85FF0C540B399F42FEE2A49 /* LocationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FB64605EF1D38C2D387B6D50DEEA92 /* LocationDelegate.swift */; };
-		635056689B950A109282EFFFF3C2B0D2 /* LocationAuthorizationTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81F526405573168A55BE2EA1DF34B39 /* LocationAuthorizationTask.swift */; };
-		79F209A4AE445C863A1F1FF5A1D2101E /* AnyLocationTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139F263DA27203F28E0D50981C8055A6 /* AnyLocationTask.swift */; };
-		B9BAEEF4DC06A4FC18A3602E33CDAE0D /* LocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AB6A0C6D2833DB94E3DC66D4BE47026 /* LocationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BAFA3FBCB490F37A04F2B968EC06A7A /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C020222B5622E9BE517CDF40C37797B6 /* LocationManager.swift */; };
+		3150F34E799EC39568C4B39F3D1D44C4 /* AsyncLocationManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 28D055E6658F9CE93877C3049D16DEF7 /* AsyncLocationManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EBD88C98320BFADB3613AA66B9CD820 /* LocationMonitoringTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE0F0750E400285C1FAE508D2D14A73 /* LocationMonitoringTask.swift */; };
+		60034387C85FF0C540B399F42FEE2A49 /* LocationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C296D6AF6A63B50A05A4CC358EF3E714 /* LocationDelegate.swift */; };
+		635056689B950A109282EFFFF3C2B0D2 /* LocationAuthorizationTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F485A872B83217A9A941D8C69906C4C1 /* LocationAuthorizationTask.swift */; };
+		79F209A4AE445C863A1F1FF5A1D2101E /* AnyLocationTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1948DFA2DE1C9085F6CF02A3CB554365 /* AnyLocationTask.swift */; };
+		B9BAEEF4DC06A4FC18A3602E33CDAE0D /* LocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A2495E9D0AA7289F7846D548CE7AF4B /* LocationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA18AA2EBD7CD88D6885834EBEDDECC5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		DC02BF459417D1536F5F6A359854C206 /* RegionMonitoringTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CB83FEE75EED4AFA989A3E9C496752 /* RegionMonitoringTask.swift */; };
+		DC02BF459417D1536F5F6A359854C206 /* RegionMonitoringTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42290BC5F522752C5BA0B4C5AA9A5BC5 /* RegionMonitoringTask.swift */; };
 		E6E8B1EF938838E918EFD36514551453 /* Pods-LocationManagerExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DABE3168B03A06E142AF0B5824F6C7D3 /* Pods-LocationManagerExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FD891E4527007BC0B88E289151315ACB /* Pods-LocationManagerExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E814702FDC615153221680EE9616827 /* Pods-LocationManagerExample-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		84D85C530842BDFFAAB6D7338AB6241F /* PBXContainerItemProxy */ = {
+		30B211CCF6A87F698641AE574B243CB7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -36,38 +36,39 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		078AFAAF7DBC7692A2318A0BCA0F2A00 /* SupportModels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SupportModels.swift; sourceTree = "<group>"; };
+		0C6097AFAC9432F6E515EAE49070ABBA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		102DDF312753B6C180C0F8320C42E153 /* Pods-LocationManagerExample */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-LocationManagerExample"; path = Pods_LocationManagerExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		139F263DA27203F28E0D50981C8055A6 /* AnyLocationTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnyLocationTask.swift; sourceTree = "<group>"; };
-		1B11864F33F52AB4E3787FFE5BACF52F /* AsyncLocationManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AsyncLocationManager-umbrella.h"; sourceTree = "<group>"; };
-		1CFA0952224CFF78FBB83E672123B5BB /* LocationTaskBridge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LocationTaskBridge.swift; sourceTree = "<group>"; };
-		2A4A45CF7CCE019C7D972B7D9F7D7A26 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		1948DFA2DE1C9085F6CF02A3CB554365 /* AnyLocationTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnyLocationTask.swift; sourceTree = "<group>"; };
+		28D055E6658F9CE93877C3049D16DEF7 /* AsyncLocationManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AsyncLocationManager-umbrella.h"; sourceTree = "<group>"; };
+		2A2495E9D0AA7289F7846D548CE7AF4B /* LocationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LocationManager.h; path = LocationManager/LocationManager/LocationManager.h; sourceTree = "<group>"; };
 		31773AFB712626725CA0EED5CAB19F12 /* AsyncLocationManager */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AsyncLocationManager; path = AsyncLocationManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		35908E5DD8D399A39C783F6BC86B8EC1 /* AsyncLocationManager-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AsyncLocationManager-Info.plist"; sourceTree = "<group>"; };
-		3AB6A0C6D2833DB94E3DC66D4BE47026 /* LocationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LocationManager.h; path = LocationManager/LocationManager/LocationManager.h; sourceTree = "<group>"; };
-		3D0D74CD23AD1A065B3271799BA114CB /* LocationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationManager.swift; path = LocationManager/LocationManager/LocationManager.swift; sourceTree = "<group>"; };
-		4AEECA09005DC1CBBF9922E345345992 /* LocationMonitoringTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LocationMonitoringTask.swift; sourceTree = "<group>"; };
+		34D832CF7A1C951487C5CC1589E9C92A /* AsyncLocationManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AsyncLocationManager-dummy.m"; sourceTree = "<group>"; };
+		42290BC5F522752C5BA0B4C5AA9A5BC5 /* RegionMonitoringTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegionMonitoringTask.swift; sourceTree = "<group>"; };
 		4C33B9BD56FAA9A1191FABF1541F2E22 /* Pods-LocationManagerExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LocationManagerExample.modulemap"; sourceTree = "<group>"; };
-		52B4064A433AA83574DA1A60682200F7 /* AsyncLocationManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AsyncLocationManager.release.xcconfig; sourceTree = "<group>"; };
-		56CB83FEE75EED4AFA989A3E9C496752 /* RegionMonitoringTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegionMonitoringTask.swift; sourceTree = "<group>"; };
-		6A427B80B40B6AD01AAEDA93E821D18E /* AsyncLocationManager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = AsyncLocationManager.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4E653D1E1746BD5517E5C685B2857335 /* AsyncLocationManager-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AsyncLocationManager-Info.plist"; sourceTree = "<group>"; };
+		57487F1E9F6BDD4AD049DF41D645A1F7 /* AsyncLocationManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AsyncLocationManager-prefix.pch"; sourceTree = "<group>"; };
+		63B71EA2A6DBB10542120FEA33870233 /* AsyncLocationManager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = AsyncLocationManager.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7017ED0FD6D6E96F7AA9B8977E4DDC80 /* AsyncLocationManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AsyncLocationManager.release.xcconfig; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		75D8142379F6A1EDF76A071CD17DD364 /* Pods-LocationManagerExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LocationManagerExample-Info.plist"; sourceTree = "<group>"; };
-		7649C8E6E9D6F3E83A52310563378160 /* AsyncLocationManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AsyncLocationManager-dummy.m"; sourceTree = "<group>"; };
 		7B647E5D9790034CB505159DB31835C9 /* Pods-LocationManagerExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LocationManagerExample-frameworks.sh"; sourceTree = "<group>"; };
 		897BE67E301AAF5A673FF3E28FF5470C /* Pods-LocationManagerExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocationManagerExample.debug.xcconfig"; sourceTree = "<group>"; };
 		92D6EADAE8A56233E1A819E53BDE5907 /* Pods-LocationManagerExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocationManagerExample.release.xcconfig"; sourceTree = "<group>"; };
-		990D1BD9854439691F80C97647C7FB09 /* SingleUpdateLocationTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SingleUpdateLocationTask.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E814702FDC615153221680EE9616827 /* Pods-LocationManagerExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LocationManagerExample-dummy.m"; sourceTree = "<group>"; };
-		A0C3F351070476AE7B2FCF57F4045045 /* AsyncLocationManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AsyncLocationManager.modulemap; sourceTree = "<group>"; };
 		B9FE9E26C65D644BB236BAD7CD330A05 /* Pods-LocationManagerExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LocationManagerExample-acknowledgements.plist"; sourceTree = "<group>"; };
-		D1FB64605EF1D38C2D387B6D50DEEA92 /* LocationDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationDelegate.swift; path = LocationManager/LocationManager/LocationDelegate.swift; sourceTree = "<group>"; };
+		BCE0F0750E400285C1FAE508D2D14A73 /* LocationMonitoringTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LocationMonitoringTask.swift; sourceTree = "<group>"; };
+		BD1907A3B347165E56F054169440D115 /* AsyncLocationManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AsyncLocationManager.modulemap; sourceTree = "<group>"; };
+		C020222B5622E9BE517CDF40C37797B6 /* LocationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationManager.swift; path = LocationManager/LocationManager/LocationManager.swift; sourceTree = "<group>"; };
+		C296D6AF6A63B50A05A4CC358EF3E714 /* LocationDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationDelegate.swift; path = LocationManager/LocationManager/LocationDelegate.swift; sourceTree = "<group>"; };
+		C497B3686573991278270541C42AAF6D /* AsyncLocationManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AsyncLocationManager.debug.xcconfig; sourceTree = "<group>"; };
+		DA8767306F44A342F8822FA7BD83D5C5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		DABE3168B03A06E142AF0B5824F6C7D3 /* Pods-LocationManagerExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LocationManagerExample-umbrella.h"; sourceTree = "<group>"; };
-		EA27BBC2A696A03B6642516073D480B4 /* AsyncLocationManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AsyncLocationManager.debug.xcconfig; sourceTree = "<group>"; };
+		DB73945D895F4465885B7B635AFC4495 /* SupportModels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SupportModels.swift; sourceTree = "<group>"; };
+		E6EE2E20C19BEB3AFEAE25B25F9BE41B /* LocationTaskBridge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LocationTaskBridge.swift; sourceTree = "<group>"; };
 		ECC523B0D8FE8B4243D1F520197B5858 /* Pods-LocationManagerExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LocationManagerExample-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F0BA51605106FE6EE97125222B124BC8 /* AsyncLocationManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AsyncLocationManager-prefix.pch"; sourceTree = "<group>"; };
-		F81F526405573168A55BE2EA1DF34B39 /* LocationAuthorizationTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LocationAuthorizationTask.swift; sourceTree = "<group>"; };
+		EE1424F8EAFA18872B2734784143CA09 /* SingleUpdateLocationTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SingleUpdateLocationTask.swift; sourceTree = "<group>"; };
+		F485A872B83217A9A941D8C69906C4C1 /* LocationAuthorizationTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LocationAuthorizationTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +91,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03CBD131C22FF300CB59F74657D234A6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD1907A3B347165E56F054169440D115 /* AsyncLocationManager.modulemap */,
+				34D832CF7A1C951487C5CC1589E9C92A /* AsyncLocationManager-dummy.m */,
+				4E653D1E1746BD5517E5C685B2857335 /* AsyncLocationManager-Info.plist */,
+				57487F1E9F6BDD4AD049DF41D645A1F7 /* AsyncLocationManager-prefix.pch */,
+				28D055E6658F9CE93877C3049D16DEF7 /* AsyncLocationManager-umbrella.h */,
+				C497B3686573991278270541C42AAF6D /* AsyncLocationManager.debug.xcconfig */,
+				7017ED0FD6D6E96F7AA9B8977E4DDC80 /* AsyncLocationManager.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "LocationManagerExample/Pods/Target Support Files/AsyncLocationManager";
+			sourceTree = "<group>";
+		};
+		27A6CCE796C2F925459A7C3D096D4EC5 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				1948DFA2DE1C9085F6CF02A3CB554365 /* AnyLocationTask.swift */,
+				F485A872B83217A9A941D8C69906C4C1 /* LocationAuthorizationTask.swift */,
+				BCE0F0750E400285C1FAE508D2D14A73 /* LocationMonitoringTask.swift */,
+				E6EE2E20C19BEB3AFEAE25B25F9BE41B /* LocationTaskBridge.swift */,
+				42290BC5F522752C5BA0B4C5AA9A5BC5 /* RegionMonitoringTask.swift */,
+				EE1424F8EAFA18872B2734784143CA09 /* SingleUpdateLocationTask.swift */,
+			);
+			name = Tasks;
+			path = LocationManager/LocationManager/Tasks;
+			sourceTree = "<group>";
+		};
 		3414FBD7E4FA7DA404B4F43278F85486 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,28 +128,29 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		3820E4FDD06F2D668AFC883624396583 /* Support Files */ = {
+		3CA5F14B4D7BE301FEA4041712A728E0 /* AsyncLocationManager */ = {
 			isa = PBXGroup;
 			children = (
-				A0C3F351070476AE7B2FCF57F4045045 /* AsyncLocationManager.modulemap */,
-				7649C8E6E9D6F3E83A52310563378160 /* AsyncLocationManager-dummy.m */,
-				35908E5DD8D399A39C783F6BC86B8EC1 /* AsyncLocationManager-Info.plist */,
-				F0BA51605106FE6EE97125222B124BC8 /* AsyncLocationManager-prefix.pch */,
-				1B11864F33F52AB4E3787FFE5BACF52F /* AsyncLocationManager-umbrella.h */,
-				EA27BBC2A696A03B6642516073D480B4 /* AsyncLocationManager.debug.xcconfig */,
-				52B4064A433AA83574DA1A60682200F7 /* AsyncLocationManager.release.xcconfig */,
+				C296D6AF6A63B50A05A4CC358EF3E714 /* LocationDelegate.swift */,
+				2A2495E9D0AA7289F7846D548CE7AF4B /* LocationManager.h */,
+				C020222B5622E9BE517CDF40C37797B6 /* LocationManager.swift */,
+				467FFB20E55E3C8105384E5071344CFC /* Pod */,
+				7757DDF5D629D965458E12C75A484165 /* Support */,
+				03CBD131C22FF300CB59F74657D234A6 /* Support Files */,
+				27A6CCE796C2F925459A7C3D096D4EC5 /* Tasks */,
 			);
-			name = "Support Files";
-			path = "LocationManagerExample/Pods/Target Support Files/AsyncLocationManager";
+			name = AsyncLocationManager;
+			path = ../..;
 			sourceTree = "<group>";
 		};
-		52F7960B65A475A5957889635755A035 /* Support */ = {
+		467FFB20E55E3C8105384E5071344CFC /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				078AFAAF7DBC7692A2318A0BCA0F2A00 /* SupportModels.swift */,
+				63B71EA2A6DBB10542120FEA33870233 /* AsyncLocationManager.podspec */,
+				DA8767306F44A342F8822FA7BD83D5C5 /* LICENSE */,
+				0C6097AFAC9432F6E515EAE49070ABBA /* README.md */,
 			);
-			name = Support;
-			path = LocationManager/LocationManager/Support;
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -130,26 +161,21 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		6A5C9171B31531ED4BEB53AEC4E89C40 /* Tasks */ = {
-			isa = PBXGroup;
-			children = (
-				139F263DA27203F28E0D50981C8055A6 /* AnyLocationTask.swift */,
-				F81F526405573168A55BE2EA1DF34B39 /* LocationAuthorizationTask.swift */,
-				4AEECA09005DC1CBBF9922E345345992 /* LocationMonitoringTask.swift */,
-				1CFA0952224CFF78FBB83E672123B5BB /* LocationTaskBridge.swift */,
-				56CB83FEE75EED4AFA989A3E9C496752 /* RegionMonitoringTask.swift */,
-				990D1BD9854439691F80C97647C7FB09 /* SingleUpdateLocationTask.swift */,
-			);
-			name = Tasks;
-			path = LocationManager/LocationManager/Tasks;
-			sourceTree = "<group>";
-		};
 		6C223D16BF719FF635019B6BB0C1D5F1 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B9EE11A9A63D40093A0ADD03775BD2D4 /* AsyncLocationManager */,
+				3CA5F14B4D7BE301FEA4041712A728E0 /* AsyncLocationManager */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7757DDF5D629D965458E12C75A484165 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				DB73945D895F4465885B7B635AFC4495 /* SupportModels.swift */,
+			);
+			name = Support;
+			path = LocationManager/LocationManager/Support;
 			sourceTree = "<group>";
 		};
 		9442BA26D951405A5FF174A73C777ACA /* Products */ = {
@@ -159,30 +185,6 @@
 				102DDF312753B6C180C0F8320C42E153 /* Pods-LocationManagerExample */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		B9EE11A9A63D40093A0ADD03775BD2D4 /* AsyncLocationManager */ = {
-			isa = PBXGroup;
-			children = (
-				D1FB64605EF1D38C2D387B6D50DEEA92 /* LocationDelegate.swift */,
-				3AB6A0C6D2833DB94E3DC66D4BE47026 /* LocationManager.h */,
-				3D0D74CD23AD1A065B3271799BA114CB /* LocationManager.swift */,
-				C063CF60DFE956B58191872D4E46ABC4 /* Pod */,
-				52F7960B65A475A5957889635755A035 /* Support */,
-				3820E4FDD06F2D668AFC883624396583 /* Support Files */,
-				6A5C9171B31531ED4BEB53AEC4E89C40 /* Tasks */,
-			);
-			name = AsyncLocationManager;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		C063CF60DFE956B58191872D4E46ABC4 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				6A427B80B40B6AD01AAEDA93E821D18E /* AsyncLocationManager.podspec */,
-				2A4A45CF7CCE019C7D972B7D9F7D7A26 /* README.md */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -274,7 +276,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				929AD0515FB8357D1C7E40E3052880EE /* PBXTargetDependency */,
+				C1888C9DB3F8520C5D05755C173F2F00 /* PBXTargetDependency */,
 			);
 			name = "Pods-LocationManagerExample";
 			productName = Pods_LocationManagerExample;
@@ -355,11 +357,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		929AD0515FB8357D1C7E40E3052880EE /* PBXTargetDependency */ = {
+		C1888C9DB3F8520C5D05755C173F2F00 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AsyncLocationManager;
 			target = 2421E08E64B58AFE393583E5A335C99C /* AsyncLocationManager */;
-			targetProxy = 84D85C530842BDFFAAB6D7338AB6241F /* PBXContainerItemProxy */;
+			targetProxy = 30B211CCF6A87F698641AE574B243CB7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -470,7 +472,7 @@
 		};
 		52DF4AC381AFA3C48CF8D2CAF41D6393 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA27BBC2A696A03B6642516073D480B4 /* AsyncLocationManager.debug.xcconfig */;
+			baseConfigurationReference = C497B3686573991278270541C42AAF6D /* AsyncLocationManager.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -505,7 +507,7 @@
 		};
 		7408141AAA541723201D7221A9339499 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 52B4064A433AA83574DA1A60682200F7 /* AsyncLocationManager.release.xcconfig */;
+			baseConfigurationReference = 7017ED0FD6D6E96F7AA9B8977E4DDC80 /* AsyncLocationManager.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

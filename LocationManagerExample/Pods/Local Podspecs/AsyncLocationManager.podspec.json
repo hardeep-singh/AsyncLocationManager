@@ -1,6 +1,6 @@
 {
   "name": "AsyncLocationManager",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "summary": "📍async/await CoreLocation",
   "description": "Wrapper for Apple CoreLocation framework with new Concurrency Model. No more delegate pattern or completion blocks.",
   "homepage": "https://github.com/hardeep-singh/AsyncLocationManager",
@@ -14,8 +14,8 @@
   "swift_versions": "5.5",
   "source": {
     "git": "https://github.com/hardeep-singh/AsyncLocationManager.git",
-    "tag": "0.0.1",
-    "branch": "main"
+    "branch": "main",
+    "tag": "1.0.0"
   },
   "source_files": "LocationManager/LocationManager/**/*.{h,m,swift}",
   "exclude_files": "Classes/Exclude",

@@ -75,7 +75,7 @@ public class LocationManager {
     }
     
     // MARK: -
-    public func startUpdatingLocation() async throws -> LocationMonitoringTask.Stream {
+    public func startUpdatingLocation() async -> LocationMonitoringTask.Stream {
         let task = LocationMonitoringTask()
         return LocationMonitoringTask.Stream { stream in
             task.stream = stream
