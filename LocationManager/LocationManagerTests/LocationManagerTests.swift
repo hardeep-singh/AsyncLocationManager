@@ -7,6 +7,7 @@
 
 import XCTest
 @testable import LocationManager
+import CoreLocation
 
 final class LocationManagerTests: XCTestCase {
 
@@ -31,6 +32,71 @@ final class LocationManagerTests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    func test_authorized_deliversWhenInUsePermissionOnRequestWhenInUse() {
+        let client = LocationManagerSpy()
+        let sut = LocationManager(locationManager: client)
+        
+        let excpet: CLAuthorizationStatus = .authorizedWhenInUse
+        
+        let exp = expectation(description: "Check Authorization")
+        
+        Task {
+            do {
+                let result =  try await sut.requestAuthorizationPermission(.whenInUse)
+                XCTAssertEqual(result, excpet)
+            } catch {
+                XCTFail("\(error)")
+            }
+            exp.fulfill()
+        }
+            
+        wait(for: [exp], timeout: 1.0)
+    }
+    
+    
+    func test_authorized_deliversAlwaysPermissionOnRequestAlways() {
+        let client = LocationManagerSpy()
+        let sut = LocationManager(locationManager: client)
+        
+        let excpet: CLAuthorizationStatus = .authorizedAlways
+        
+        let exp = expectation(description: "Check Authorization")
+        
+        Task {
+            do {
+                let result =  try await sut.requestAuthorizationPermission(.always)
+                XCTAssertEqual(result, excpet)
+            } catch {
+                XCTFail("\(error)")
+            }
+            exp.fulfill()
+        }
+            
+        wait(for: [exp], timeout: 1.0)
+    }
+    
+    private class LocationManagerSpy: CLLocationManager {
+        
+        var messageAuthorizationStatus: CLAuthorizationStatus = .notDetermined
+        
+        override var authorizationStatus: CLAuthorizationStatus {
+            return messageAuthorizationStatus
+        }
+        
+        override func requestAlwaysAuthorization() {
+            messageAuthorizationStatus = .authorizedAlways
+            self.delegate?.locationManager?(self, didChangeAuthorization: messageAuthorizationStatus)
+            self.delegate?.locationManagerDidChangeAuthorization?(self)
+        }
+        
+        override func requestWhenInUseAuthorization() {
+            messageAuthorizationStatus = .authorizedWhenInUse
+            self.delegate?.locationManager?(self, didChangeAuthorization: messageAuthorizationStatus)
+            self.delegate?.locationManagerDidChangeAuthorization?(self)
+        }
+                
     }
 
 }
