@@ -14,8 +14,8 @@ public class LocationManager {
     private(set) var locationDelegate: LocationDelegate
     private(set) var locationTaskBridge: LocationTaskBridge = .init()
     
-    public init() {
-        locationManager = CLLocationManager()
+    public init(locationManager: CLLocationManager = CLLocationManager()) {
+        self.locationManager = locationManager
         locationDelegate = LocationDelegate(locationTaskBridge: locationTaskBridge)
         locationManager.delegate = locationDelegate
     }
@@ -44,6 +44,18 @@ public class LocationManager {
     }
     
     // MARK: - Request permissions
+    
+    // MARK: - Region Monitoring...
+    public func authorizationPermissionDidChanged() async -> AuthorizationMonitoringTask.Stream {
+        let task = AuthorizationMonitoringTask()
+        return AuthorizationMonitoringTask.Stream { stream in
+            task.stream = stream
+            Task {
+                await locationTaskBridge.add(task: task)
+            }
+        }
+    }
+    
     @discardableResult
     public func requestAuthorizationPermission(_ permission: LocationPermissionType) async throws -> CLAuthorizationStatus {
         switch permission {

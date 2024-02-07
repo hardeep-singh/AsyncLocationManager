@@ -39,6 +39,10 @@ class LocationAuthorizationTask: AnyLocationTask {
                 return
             }
             self.continuation = continuation
+            if locationManager.authorizationStatus == .authorizedWhenInUse {
+                self.continuation?.resume(with: .success(locationManager.authorizationStatus))
+                self.continuation = nil
+            }
             locationManager.locationManager.requestAlwaysAuthorization()
         }
     }

@@ -26,6 +26,12 @@ class ViewController: UIViewController {
             print("Location Services Enabled:- \(await locationManager.locationServicesEnabled)")
         }
         
+        Task {
+            for await status in  await locationManager.authorizationPermissionDidChanged() {
+                print("authorizationPermissionDidChanged-> \(status.rawValue)")
+            }
+        }
+        
     }
     
     @IBAction func requestAuthorizationPermission(_ sender: Any) {
